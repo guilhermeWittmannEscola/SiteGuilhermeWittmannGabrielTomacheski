@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda sobre pegada hídrica, calcule sua estimativa de consumo de água e descubra hábitos mais conscientes.">
+  <meta name="theme-color" content="#0077b6">
+  <title>Pegada Hídrica | Descubra e reduza seu consumo de água</title>
+
+  <!-- Tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== CABEÇALHO / NAVEGAÇÃO ==================== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#inicio" class="logo" aria-label="Pegada Hídrica — início">
+        <span class="logo__icon" aria-hidden="true">💧</span>
+        <span class="logo__text">Pegada Hídrica</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#conceito" class="nav__link">O que é</a></li>
+          <li><a href="#calculadora" class="nav__link">Calculadora</a></li>
+          <li><a href="#comparacoes" class="nav__link">Comparações</a></li>
+          <li><a href="#curiosidades" class="nav__link">Curiosidades</a></li>
+          <li><a href="#quiz" class="nav__link">Quiz</a></li>
+          <li><a href="#desafios" class="nav__link">Desafios</a></li>
+          <li><a href="#estatisticas" class="nav__link">Estatísticas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar modo claro ou escuro" title="Alternar tema">
+          <span class="theme-toggle__icon" id="themeIcon" aria-hidden="true">🌙</span>
+        </button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 1. PÁGINA INICIAL ==================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__drop hero__drop--1">💧</span>
+        <span class="hero__drop hero__drop--2">💧</span>
+        <span class="hero__drop hero__drop--3">💧</span>
+        <span class="hero__drop hero__drop--4">💧</span>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow">Consumo consciente de água</p>
+        <h1 class="hero__title">
+          Cada gota conta.<br>
+          Descubra a <span class="text-gradient">sua pegada hídrica</span>.
+        </h1>
+        <p class="hero__subtitle">
+          Toda ação do seu dia — do banho ao prato de comida — carrega um volume invisível de água.
+          Explore o conceito, calcule sua estimativa pessoal e aprenda hábitos que fazem diferença de verdade.
+        </p>
+        <div class="hero__actions">
+          <a href="#calculadora" class="btn btn--primary">
+            🧮 Calcule sua Pegada Hídrica
+          </a>
+          <a href="#conceito" class="btn btn--ghost">Entender o conceito</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-counter="70">0</span><span class="hero__stat-suffix">%</span>
+            <span class="hero__stat-label">da água doce mundial vai para a agricultura</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-counter="15415">0</span>
+            <span class="hero__stat-label">litros de água para produzir 1&nbsp;kg de carne bovina</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-counter="1">0</span><span class="hero__stat-suffix">%</span>
+            <span class="hero__stat-label">da água do planeta é doce e facilmente acessível</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" role="presentation">
+          <path d="M0,64 C150,110 350,0 600,40 C850,80 1050,10 1200,50 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== 2. O QUE É PEGADA HÍDRICA ==================== -->
+    <section class="section" id="conceito">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Entenda o conceito</p>
+        <h2 class="section__title">O que é Pegada Hídrica?</h2>
+        <p class="section__subtitle">
+          É a quantidade total de água doce usada, direta ou indiretamente, para produzir os bens e
+          serviços que consumimos — e para manter o seu próprio estilo de vida.
+        </p>
+
+        <div class="card-grid card-grid--3">
+          <article class="info-card reveal">
+            <div class="info-card__icon" aria-hidden="true">💧</div>
+            <h3 class="info-card__title">O conceito</h3>
+            <p class="info-card__text">
+              A pegada hídrica mede o volume de água doce “escondido” por trás de tudo o que usamos, comemos
+              e vestimos. É medida em litros ou metros cúbicos e varia conforme hábitos, região e estilo de vida.
+              O indicador foi popularizado pelo professor Arjen Hoekstra e pela Water Footprint Network.
+            </p>
+          </article>
+
+          <article class="info-card reveal">
+            <div class="info-card__icon" aria-hidden="true">🔄</div>
+            <h3 class="info-card__title">Direta × Indireta</h3>
+            <p class="info-card__text">
+              O <strong>consumo direto</strong> é a água que sai da torneira: banho, louça, descarga.
+              Já o <strong>consumo indireto</strong> (ou água virtual) é a água usada para produzir o que compramos —
+              alimentos, roupas e eletrônicos — e costuma ser bem maior que o direto.
+            </p>
+          </article>
+
+          <article class="info-card reveal">
+            <div class="info-card__icon" aria-hidden="true">🌍</div>
+            <h3 class="info-card__title">Por que economizar</h3>
+            <p class="info-card__text">
+              Menos de 1% da água do planeta é doce e está facilmente disponível. Economizar
+              protege ecossistemas, reduz demanda por energia no tratamento e distribuição e ajuda
+              a garantir o recurso para as próximas gerações.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. CALCULADORA INTERATIVA ==================== -->
+    <section class="section section--tinted" id="calculadora">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Ferramenta interativa</p>
+        <h2 class="section__title">Calculadora de Pegada Hídrica</h2>
+        <p class="section__subtitle">
+          Responda com sinceridade. O resultado é uma <strong>estimativa educativa semanal</strong>,
+          por pessoa da residência. Valores baseados em médias da literatura (Water Footprint Network e similares).
+        </p>
+
+        <div class="calculator">
+          <form class="calculator__form" id="calculatorForm" novalidate>
+            <div class="form-group">
+              <label for="banhosPorDia">Quantos banhos você toma por dia?</label>
+              <input type="number" id="banhosPorDia" name="banhosPorDia" min="0" max="10" step="1" placeholder="Ex: 1" required inputmode="numeric" aria-describedby="err-banhosPorDia">
+              <span class="form-error" id="err-banhosPorDia" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="duracaoBanho">Quantos minutos dura cada banho?</label>
+              <input type="number" id="duracaoBanho" name="duracaoBanho" min="0" max="120" step="1" placeholder="Ex: 10" required inputmode="numeric" aria-describedby="err-duracaoBanho">
+              <span class="form-error" id="err-duracaoBanho" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="consumoCarne">Quantas vezes por semana você consome carne?</label>
+              <input type="number" id="consumoCarne" name="consumoCarne" min="0" max="21" step="1" placeholder="Ex: 5" required inputmode="numeric" aria-describedby="err-consumoCarne">
+              <span class="form-error" id="err-consumoCarne" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="roupasPorMes">Quantas peças de roupa você compra por mês?</label>
+              <input type="number" id="roupasPorMes" name="roupasPorMes" min="0" max="50" step="1" placeholder="Ex: 2" required inputmode="numeric" aria-describedby="err-roupasPorMes">
+              <span class="form-error" id="err-roupasPorMes" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="pessoasResidencia">Quantas pessoas moram na residência?</label>
+              <input type="number" id="pessoasResidencia" name="pessoasResidencia" min="1" max="20" step="1" placeholder="Ex: 3" required inputmode="numeric" aria-describedby="err-pessoasResidencia">
+              <span class="form-error" id="err-pessoasResidencia" role="alert"></span>
+            </div>
+
+            <fieldset class="form-group form-group--toggle">
+              <legend class="form-group__label-text">Você lava o carro em casa?</legend>
+              <div class="radio-pair" role="radiogroup">
+                <label class="radio-pill"><input type="radio" name="lavaCarro" value="sim"> Sim</label>
+                <label class="radio-pill"><input type="radio" name="lavaCarro" value="nao" checked> Não</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group form-group--toggle">
+              <legend class="form-group__label-text">Você reutiliza água (ex.: máquina de lavar, banho)?</legend>
+              <div class="radio-pair" role="radiogroup">
+                <label class="radio-pill"><input type="radio" name="reutilizaAgua" value="sim"> Sim</label>
+                <label class="radio-pill"><input type="radio" name="reutilizaAgua" value="nao" checked> Não</label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn--primary btn--full">Calcular minha pegada hídrica</button>
+          </form>
+
+          <div class="calculator__result" id="calculatorResult" aria-live="polite">
+            <div class="progress-wrap" id="progressWrap" hidden>
+              <p class="progress-label">Calculando sua estimativa...</p>
+              <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressBar">
+                <div class="progress-bar__fill" id="progressFill"></div>
+              </div>
+            </div>
+
+            <div class="result-card" id="resultCard" hidden>
+              <div class="result-card__gauge">
+                <svg viewBox="0 0 120 140" class="water-glass" aria-hidden="true">
+                  <path class="water-glass__outline" d="M20,10 H100 L88,130 H32 Z"></path>
+                  <clipPath id="glassClip">
+                    <path d="M20,10 H100 L88,130 H32 Z"></path>
+                  </clipPath>
+                  <rect id="waterLevel" class="water-glass__fill" x="15" y="130" width="90" height="0" clip-path="url(#glassClip)"></rect>
+                </svg>
+              </div>
+              <div class="result-card__info">
+                <span class="result-card__badge" id="resultBadge">🟢 Baixa</span>
+                <p class="result-card__number">
+                  <span id="resultLiters">0</span> L
+                  <span class="result-card__unit">/semana por pessoa</span>
+                </p>
+                <p class="result-card__message" id="resultMessage"></p>
+                <div class="result-card__tips">
+                  <h4>Dicas para você</h4>
+                  <ul id="resultTips"></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-placeholder" id="resultPlaceholder">
+              <span class="result-placeholder__icon" aria-hidden="true">🧮</span>
+              <p>Preencha o formulário ao lado e veja sua estimativa aparecer aqui.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. COMPARAÇÕES VISUAIS ==================== -->
+    <section class="section" id="comparacoes">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Água invisível no seu dia a dia</p>
+        <h2 class="section__title">Comparações Visuais</h2>
+        <p class="section__subtitle">
+          Valores médios globais aproximados (Water Footprint Network / Hoekstra et al.), para fins educativos.
+        </p>
+
+        <div class="card-grid card-grid--3">
+          <article class="compare-card reveal">
+            <span class="compare-card__icon" aria-hidden="true">🥩</span>
+            <h3>1 kg de carne bovina</h3>
+            <p class="compare-card__value">≈ 15.415 L</p>
+            <p class="compare-card__desc">Uma das maiores pegadas alimentares: ração, pastagem, dessedentação e processamento.</p>
+          </article>
+
+          <article class="compare-card reveal">
+            <span class="compare-card__icon" aria-hidden="true">👕</span>
+            <h3>1 camiseta de algodão</h3>
+            <p class="compare-card__value">≈ 2.700 L</p>
+            <p class="compare-card__desc">Quase todo o volume vem do cultivo do algodão, cultura que exige muita irrigação.</p>
+          </article>
+
+          <article class="compare-card reveal">
+            <span class="compare-card__icon" aria-hidden="true">🍔</span>
+            <h3>1 hambúrguer (~150 g)</h3>
+            <p class="compare-card__value">≈ 2.400 L</p>
+            <p class="compare-card__desc">Carne, pão e demais ingredientes; a carne responde pela maior parte do volume.</p>
+          </article>
+
+          <article class="compare-card reveal">
+            <span class="compare-card__icon" aria-hidden="true">☕</span>
+            <h3>1 xícara de café (125 ml)</h3>
+            <p class="compare-card__value">≈ 140 L</p>
+            <p class="compare-card__desc">Cultivo, processamento e transporte dos grãos consomem bem mais água do que se imagina.</p>
+          </article>
+
+          <article class="compare-card reveal">
+            <span class="compare-card__icon" aria-hidden="true">📄</span>
+            <h3>1 folha de papel A4</h3>
+            <p class="compare-card__value">≈ 10 L</p>
+            <p class="compare-card__desc">Relacionada ao cultivo das árvores e ao processo industrial de fabricação da celulose.</p>
+          </article>
+
+          <article class="compare-card reveal">
+            <span class="compare-card__icon" aria-hidden="true">🥛</span>
+            <h3>1 litro de leite</h3>
+            <p class="compare-card__value">≈ 1.020 L</p>
+            <p class="compare-card__desc">Reflete a água usada para alimentar e cuidar do gado leiteiro ao longo da produção.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CURIOSIDADES ==================== -->
+    <section class="section section--tinted" id="curiosidades">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Você sabia?</p>
+        <h2 class="section__title">Curiosidades sobre a água</h2>
+
+        <div class="accordion" id="accordion">
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" id="acc-btn-1" aria-controls="acc-panel-1">
+              <span>💧 Quanta água doce existe de fato no planeta?</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel" id="acc-panel-1" role="region" aria-labelledby="acc-btn-1" hidden>
+              <p>Cerca de 97% da água da Terra é salgada. Dos cerca de 3% de água doce, a maior parte está
+              congelada em geleiras e calotas polares. Sobram menos de 1% facilmente acessíveis em rios, lagos e aquíferos.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" id="acc-btn-2" aria-controls="acc-panel-2">
+              <span>👻 O que é “água virtual”?</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel" id="acc-panel-2" role="region" aria-labelledby="acc-btn-2" hidden>
+              <p>É toda a água usada para fabricar um produto, mas que não aparece nele. Uma camiseta não “contém”
+              água visível, porém carrega milhares de litros usados no plantio do algodão e na fabricação do tecido.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" id="acc-btn-3" aria-controls="acc-panel-3">
+              <span>🌾 Qual é o maior consumidor de água do mundo?</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel" id="acc-panel-3" role="region" aria-labelledby="acc-btn-3" hidden>
+              <p>A agricultura responde por cerca de 70% de toda a água doce retirada no planeta, muito à frente
+              da indústria e do uso doméstico. A pecuária e o cultivo de forragem têm peso especial nesse total.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" id="acc-btn-4" aria-controls="acc-panel-4">
+              <span>🚰 Uma torneira pingando desperdiça muito?</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel" id="acc-panel-4" role="region" aria-labelledby="acc-btn-4" hidden>
+              <p>Sim. Uma torneira gotejando pode desperdiçar dezenas de litros por dia. Um vazamento maior
+              não reparado pode chegar a centenas de litros — muitas vezes sem que ninguém perceba.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" id="acc-btn-5" aria-controls="acc-panel-5">
+              <span>🇧🇷 O Brasil tem muita água, então não precisa economizar?</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel" id="acc-panel-5" role="region" aria-labelledby="acc-btn-5" hidden>
+              <p>O Brasil concentra uma fatia enorme da água doce do mundo, mas ela está distribuída de forma
+              muito desigual. O tratamento e a distribuição têm custo energético e financeiro. Economizar continua importante em qualquer região.</p>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button type="button" class="accordion__header" aria-expanded="false" id="acc-btn-6" aria-controls="acc-panel-6">
+              <span>🌧️ Reaproveitar água da chuva realmente ajuda?</span>
+              <span class="accordion__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="accordion__panel" id="acc-panel-6" role="region" aria-labelledby="acc-btn-6" hidden>
+              <p>Sim. Usar água da chuva para regar plantas, lavar áreas externas ou em descargas reduz a
+              retirada de água tratada, aliviando represas e mananciais e diminuindo a conta de água.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. QUIZ INTERATIVO ==================== -->
+    <section class="section" id="quiz">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Teste seus conhecimentos</p>
+        <h2 class="section__title">Quiz do Consumo Consciente</h2>
+        <p class="section__subtitle">5 perguntas rápidas sobre uso consciente da água.</p>
+
+        <div class="quiz" id="quizApp" role="region" aria-label="Quiz interativo">
+          <div class="quiz__progress">
+            <span id="quizProgressText">Pergunta 1 de 5</span>
+            <div class="quiz__progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20">
+              <div class="quiz__progress-fill" id="quizProgressFill"></div>
+            </div>
+          </div>
+
+          <div class="quiz__question" id="quizQuestion"></div>
+          <div class="quiz__options" id="quizOptions" role="group" aria-label="Opções de resposta"></div>
+
+          <div class="quiz__actions">
+            <button type="button" class="btn btn--primary" id="quizNextBtn" disabled>Próxima pergunta</button>
+          </div>
+
+          <div class="quiz__result" id="quizResult" hidden>
+            <h3 id="quizScoreTitle"></h3>
+            <p id="quizScoreMessage"></p>
+            <ol class="quiz__review" id="quizReview"></ol>
+            <button type="button" class="btn btn--ghost" id="quizRestartBtn">Refazer o quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. DESAFIO SUSTENTÁVEL ==================== -->
+    <section class="section section--tinted" id="desafios">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Coloque em prática</p>
+        <h2 class="section__title">Desafio Sustentável</h2>
+        <p class="section__subtitle">
+          Marque o que você já pratica ou pretende adotar. Seu progresso fica salvo neste dispositivo.
+        </p>
+
+        <div class="challenge">
+          <div class="challenge__progress">
+            <span id="challengeProgressText">0 de 6 concluídos</span>
+            <div class="challenge__progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <div class="challenge__progress-fill" id="challengeProgressFill"></div>
+            </div>
+          </div>
+
+          <ul class="challenge__list" id="challengeList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. ESTATÍSTICAS ==================== -->
+    <section class="section" id="estatisticas">
+      <div class="container">
+        <p class="eyebrow eyebrow--center">Seus números</p>
+        <h2 class="section__title">Estatísticas</h2>
+        <p class="section__subtitle" id="statsSubtitle">
+          Calcule sua pegada hídrica para visualizar aqui o seu consumo, a economia potencial e a comparação com uma referência educativa.
+        </p>
+
+        <div class="stats" id="statsChart">
+          <div class="stats__empty" id="statsEmpty">
+            <span aria-hidden="true">📊</span>
+            <p>Nenhum cálculo realizado ainda.</p>
+            <a href="#calculadora" class="btn btn--ghost">Ir para a calculadora</a>
+          </div>
+
+          <div class="stats__bars" id="statsBars" hidden>
+            <div class="stat-bar">
+              <div class="stat-bar__label">Seu consumo estimado <span id="statConsumo">0 L</span></div>
+              <div class="stat-bar__track"><div class="stat-bar__fill stat-bar__fill--blue" id="barConsumo"></div></div>
+            </div>
+            <div class="stat-bar">
+              <div class="stat-bar__label">Economia potencial (hábitos conscientes) <span id="statEconomia">0 L</span></div>
+              <div class="stat-bar__track"><div class="stat-bar__fill stat-bar__fill--green" id="barEconomia"></div></div>
+            </div>
+            <div class="stat-bar">
+              <div class="stat-bar__label">Referência educativa média <span id="statMedia">0 L</span></div>
+              <div class="stat-bar__track"><div class="stat-bar__fill stat-bar__fill--gray" id="barMedia"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 9. RODAPÉ ==================== -->
+  <footer class="footer" id="footer">
+    <div class="wave-divider wave-divider--footer" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" role="presentation">
+        <path d="M0,64 C150,110 350,0 600,40 C850,80 1050,10 1200,50 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--footer">
+          <span class="logo__icon" aria-hidden="true">💧</span>
+          <span class="logo__text">Pegada Hídrica</span>
+        </a>
+        <p>
+          Projeto educativo desenvolvido para conscientizar sobre o uso consciente da água.
+          Dados e estimativas têm caráter ilustrativo, baseados em médias da literatura científica
+          (Water Footprint Network e similares).
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#conceito">O que é</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#comparacoes">Comparações</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Participe</h4>
+        <ul>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#desafios">Desafios</a></li>
+          <li><a href="#estatisticas">Estatísticas</a></li>
+          <li><a href="#inicio">Voltar ao início</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__bottom">
+      © 2026 Pegada Hídrica — Site educativo. Feito com 💧 e HTML, CSS e JavaScript puros.
+    </p>
+  </footer>
+
+  <!-- Botão flutuante voltar ao topo -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Voltar ao topo" hidden>↑</button>
+
+  <!-- Área de mensagens de feedback (toast) -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
